@@ -13,7 +13,7 @@ const Home = () => {
                 <Container>
                     <h1>Bem-Vindo ao <span>Costs</span> </h1>
                     <p>Comece a gerenciar os seus projetos!</p>
-                    <LinkButton to="/newproject" text="Criar Projeto" />
+                    <LinkButton to="/novoprojeto" text="Criar Projeto" />
                     <img src={savings} alt="Costs" />
                 </Container>
             </section>

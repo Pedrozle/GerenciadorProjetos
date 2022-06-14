@@ -1,2 +1,46 @@
 
 /* estilos do Layout Footer*/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3em;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.social_list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social_list a{
+    margin-right: 1em;
+}
+
+.social_list a:hover, footer a:hover{
+    color: #ffbb33;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.copyright{
+    margin-top: 1em;
+}
+
+.copyright span{
+    color: #ffbb33;
+    font-weight: 700;
+}
+
+.creator{
+    text-align: end;
+    transform: translate(35px, 52px);
+}
