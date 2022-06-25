@@ -1,7 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 import Message from '../components/layout/Message';
+import LinkButton from '../components/LinkButton';
+
+import styles from './css/Projects.module.css'
 
 const Projects = () => {
 
@@ -9,18 +13,21 @@ const Projects = () => {
     let message = ''
 
     if(state){
-        console.log("o state " + state.message)
         message = state.message
-    }else{
-        console.log("deu ruim " + state)
     }
 
     return ( 
         <main>
-            <div className="container">
-                <h1>Meus Projetos</h1>
-                {message && <Message type="success" msg={message} />}
-            </div>
+            <section className={styles.projectContainer}>
+                <Container>
+                    {message && <Message type="success" msg={message} />}
+                    <div className={styles.titleContainer}>
+                        <h1>Meus Projetos</h1>
+                        <LinkButton to="/novoprojeto" text="Criar Projeto"/>
+                    </div>
+                    <p>Projetos</p> 
+                </Container>
+            </section>
         </main>
      );
 }

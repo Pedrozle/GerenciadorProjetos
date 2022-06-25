@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import styles from './css/Home.module.css';
 
 import savings from './../img/savings.svg'
-import LinkButton from '../components/LinkButon';
+import LinkButton from '../components/LinkButton';
 
 const Home = () => {
     return ( 
