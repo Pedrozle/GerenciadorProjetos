@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 
-import styles from './../css/Message.module.css'
+import styles from './css/Message.module.css'
 
 const Message = ( {type, msg} ) => {
 

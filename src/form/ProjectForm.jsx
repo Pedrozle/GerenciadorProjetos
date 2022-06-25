@@ -65,6 +65,12 @@ const ProjectForm = ( {handleSubmit, btnText, projectData} ) => {
                 placeholder="Insira o Orçamento do Projeto" handleOnChange={handleChange}
                 value={project.orcamento ? project.orcamento : ''}
             />
+            
+            <Input type="text" text="Motivo:" name="motivo" 
+                placeholder="Insira o Motivo do Projeto" handleOnChange={handleChange}
+                value={project.motivo ? project.motivo : ''}
+            />
+
             <Select name="category_id" text="Selecione a Categoria" 
                 handleOnChange={handleCategory} options={categories} 
                 value={ project.category ? project.category.id : '' }
