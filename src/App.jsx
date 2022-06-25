@@ -13,6 +13,7 @@ import NovoProjeto from './routes/NovoProjeto';
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './routes/Projects';
 
 const App = () => {
     return ( 
@@ -24,6 +25,7 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/empresa" element={<Empresa />} />
                     <Route path="/contato" element={<Contato />} />
+                    <Route path="/projetos" element={<Projects />} />
                     <Route path="/novoprojeto" element={<NovoProjeto />} />
                 </Routes>
                 <Footer/>
