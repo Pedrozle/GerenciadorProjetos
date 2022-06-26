@@ -1,5 +1,18 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "titulo": "Dan bobao",
+      "orcamento": "100000",
+      "motivo": "Um projeto para testar a capacidade do time",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

@@ -20,7 +20,7 @@ const ProjectForm = ( {handleSubmit, btnText, projectData} ) => {
     const [project, setProject] = useState(projectData || {})
 
     useEffect( () => { //useEffect carrega os dados somente uma vez ao invés de um loop infinito
-        fetch("http://localhost:5000/categories", { //faz uma requisição ao "backend" com os dados
+        fetch("http://192.168.100.196:5000/categories", { //faz uma requisição ao "backend" com os dados
             method: 'GET',
             header:{
                 "Content-Type": "application/json"

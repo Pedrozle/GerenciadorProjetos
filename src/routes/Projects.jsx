@@ -18,7 +18,7 @@ const Projects = () => {
     const [projectMessage, setProjectMessage] = useState('')
 
     useEffect(() => {
-        fetch("http://localhost:5000/projects", {
+        fetch("http://192.168.100.196:5000/projects", {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
@@ -35,7 +35,7 @@ const Projects = () => {
 
 
     function removeProject(id) {
-        fetch(`http://localhost:5000/projects/${id}`,{
+        fetch(`http://192.168.100.196:5000/projects/${id}`,{
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',
