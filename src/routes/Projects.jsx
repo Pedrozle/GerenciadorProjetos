@@ -35,6 +35,7 @@ const Projects = () => {
 
 
     function removeProject(id) {
+        setProjectMessage('')
         fetch(`http://192.168.100.196:5000/projects/${id}`,{
             method: 'DELETE',
             headers: {

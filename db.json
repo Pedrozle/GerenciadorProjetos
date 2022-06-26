@@ -1,28 +1,35 @@
 {
   "projects": [
     {
-      "titulo": "Dan Legal icr",
-      "orcamento": "1050",
-      "motivo": "Um projeto para testar a capacidade do time",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 1
-    },
-    {
       "titulo": "Jogo da Orb",
-      "orcamento": "100000",
-      "motivo": "Um projeto para testar a capacidade do time",
+      "orcamento": "10000",
+      "motivo": "Um método de verificação de capacidade da equipe",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
-      "costs": 0,
-      "services": [],
-      "id": 2
+      "costs": 6500,
+      "services": [
+        {
+          "titulo": "Contratação de Modelador",
+          "custo": "2000",
+          "descricao": "O caba tem que modelar",
+          "id": "9f803054-c4f3-484c-83ff-fcde58f80b03"
+        },
+        {
+          "titulo": "Contratação de Dev PHP",
+          "custo": "500",
+          "descricao": "Criar o site do jogo",
+          "id": "df251804-4638-47fb-8595-9aabd5e4eeb6"
+        },
+        {
+          "titulo": "Contratação de Diretor de Arte",
+          "custo": "4000",
+          "descricao": "O caba vai desenhar",
+          "id": "f715d61c-6c12-4a17-9455-576b06250b30"
+        }
+      ],
+      "id": 1
     }
   ],
   "categories": [
