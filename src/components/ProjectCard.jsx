@@ -22,7 +22,7 @@ const ProjectCard = ( {id, name, motivo, orcamento, categoria, handleRemove} ) =
                     <span>Orçamento: </span> R$ {orcamento}
                 </p>
                 <div className={styles.cardActions}>
-                    <Link to="/" >Editar</Link>
+                    <Link to={`/projeto/${id}`} className>Editar</Link>
                     <button  onClick={remove} className={styles.btn} >
                         Apagar
                     </button>

@@ -1,16 +1,28 @@
 {
   "projects": [
     {
-      "titulo": "Dan bobao",
-      "orcamento": "100000",
+      "titulo": "Dan Legal icr",
+      "orcamento": "1050",
       "motivo": "Um projeto para testar a capacidade do time",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "4",
+        "name": "Planejamento"
       },
       "costs": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "titulo": "Jogo da Orb",
+      "orcamento": "100000",
+      "motivo": "Um projeto para testar a capacidade do time",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [

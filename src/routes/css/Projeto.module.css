@@ -1,0 +1,44 @@
+
+.projetoContainer{
+    margin: 2em;
+}
+
+.projetoContainer h1,
+.projetoContainer h2,
+.projetoContainer p{
+    margin-bottom: 0.5em;
+}
+
+.projetoContainer h1{
+    background-color: #222;
+    color: #ffbb33;
+    padding: 0.4em;
+}
+
+.projetoContainer span{
+    font-weight: bold;
+}
+
+.projetoDetails,
+.service_form_details{
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+
+.btn{
+    background-color: #222;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: .5s;
+    margin-bottom: 1em;
+}
+
+.btn:hover{
+    color: #ffbb33;
+    box-shadow: 2px 2px;
+}

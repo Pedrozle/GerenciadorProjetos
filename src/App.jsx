@@ -10,6 +10,7 @@ import NotFound from './routes/NotFound';
 import Empresa from './routes/Empresa';
 import Contato from './routes/Contato';
 import NovoProjeto from './routes/NovoProjeto';
+import Projeto from './routes/Projeto';
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,6 +28,7 @@ const App = () => {
                     <Route path="/contato" element={<Contato />} />
                     <Route path="/projetos" element={<Projects />} />
                     <Route path="/novoprojeto" element={<NovoProjeto />} />
+                    <Route path="/projeto/:id" element={<Projeto />} />
                 </Routes>
                 <Footer/>
             </BrowserRouter>
