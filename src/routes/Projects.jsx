@@ -15,6 +15,7 @@ const Projects = () => {
     const [projects, setProjects] = useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
     const {state} = useLocation()
+    const [projectMessage, setProjectMessage] = useState('')
 
     useEffect(() => {
         fetch("http://localhost:5000/projects", {
@@ -33,6 +34,20 @@ const Projects = () => {
     }, []);
 
 
+    function removeProject(id) {
+        fetch(`http://localhost:5000/projects/${id}`,{
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json',
+            },
+        })
+        .then((response) => response.json())
+        .then(() => {
+            setProjects(projects.filter((project) => project.id !== id))
+            setProjectMessage('Projeto removido com sucesso!')
+        })
+        .catch(err => console.log(err))
+    }
 
     let message = ''
 
@@ -46,6 +61,7 @@ const Projects = () => {
         <main className="container">
             <section className={styles.projectContainer}>
                     {message && <Message type="success" msg={message} />}
+                    {projectMessage && <Message type="success" msg={projectMessage} />}
                     <div className={styles.titleContainer}>
                         <h1>Meus Projetos</h1>
                         <LinkButton to="/novoprojeto" text="Criar Projeto"/>
@@ -61,6 +77,7 @@ const Projects = () => {
                                     orcamento={project.orcamento}
                                     categoria={project.category.name}
                                     key={project.id}
+                                    handleRemove={removeProject}
                                 />
                             )
                         )}

@@ -1,9 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 import styles from './css/Card.module.css'
-import LinkButton from './LinkButton';
 
 const ProjectCard = ( {id, name, motivo, orcamento, categoria, handleRemove} ) => {
+    
+    const remove = (e) => {
+        e.preventDefault()
+        handleRemove(id)
+    }
+
     return ( 
         <div className={styles.card}>
             <h4>{name}</h4>
@@ -16,8 +22,10 @@ const ProjectCard = ( {id, name, motivo, orcamento, categoria, handleRemove} ) =
                     <span>Orçamento: </span> R$ {orcamento}
                 </p>
                 <div className={styles.cardActions}>
-                    <LinkButton to="/" text="Editar" />
-                    <LinkButton to="/" text="Apagar" />
+                    <Link to="/" >Editar</Link>
+                    <button  onClick={remove} className={styles.btn} >
+                        Apagar
+                    </button>
                 </div>
         </div> 
     );

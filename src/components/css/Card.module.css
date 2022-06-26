@@ -57,3 +57,21 @@
     display: flex;
     align-items: center;
 }
+
+.btn{
+    background-color: #222;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: .5s;
+    margin: 0 5px;
+}
+
+.btn:hover{
+    color: #ffbb33;
+    box-shadow: 2px 2px;
+}
+
+.btn .apagar:hover{
+    background-color: #ff0000;
+}
