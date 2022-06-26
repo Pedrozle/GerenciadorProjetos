@@ -1,65 +1,6 @@
 {
   "projects": [
-    {
-      "titulo": "Lubrificante Pauzao de Cavalo",
-      "orcamento": "100000",
-      "motivo": "Lubrificar os cuzinhos dos funcionários",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "titulo": "Compra de Dildo",
-      "orcamento": "50000",
-      "motivo": "Animar os funcionarios",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "titulo": "cOISA FEIA",
-      "orcamento": "50000",
-      "motivo": "asasa",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "titulo": "is isghsadasdadgfhj",
-      "orcamento": "sfgh",
-      "motivo": "dshfghj",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "titulo": "aa",
-      "orcamento": "aaa",
-      "motivo": "Animar os funcionarios",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 5
-    }
+  
   ],
   "categories": [
     {

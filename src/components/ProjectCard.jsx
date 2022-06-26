@@ -11,7 +11,7 @@ const ProjectCard = ( {id, name, motivo, orcamento, categoria, handleRemove} ) =
                     <span className={`${styles[categoria.toLowerCase()]}`}></span>
                     {categoria}
                 </p>
-                <p class="card-text">{motivo}</p>
+                <p className="card-text">{motivo}</p>
                 <p>
                     <span>Orçamento: </span> R$ {orcamento}
                 </p>
